@@ -1,0 +1,16 @@
+{
+  "project_name": "Atlas API v2 Release",
+  "release": {"name": "v2.4.0", "date": "2026-10-29", "status": "in_progress"},
+  "issues": [
+    {"id": "ENG-101", "title": "Resolve authorization regression", "state": "open", "severity": "critical", "labels": ["security", "release-blocker"], "assignee": "team-identity", "opened_at": "2026-10-01", "due_date": "2026-10-23", "linked_pr_ids": ["PR-201"]},
+    {"id": "ENG-102", "title": "Update API migration guide", "state": "open", "severity": "medium", "labels": ["documentation"], "assignee": "team-platform", "opened_at": "2026-10-05", "due_date": "2026-10-28", "linked_pr_ids": []},
+    {"id": "ENG-103", "title": "Investigate intermittent integration test", "state": "blocked", "severity": "high", "labels": ["blocked"], "opened_at": "2026-10-03", "assignee": null, "linked_pr_ids": ["PR-203"]},
+    {"id": "ENG-104", "title": "Add optional telemetry field", "state": "closed", "severity": "low", "labels": [], "assignee": "team-observability", "opened_at": "2026-10-10"}
+  ],
+  "pull_requests": [
+    {"id": "PR-201", "title": "Fix authorization regression", "state": "open", "draft": false, "ci_status": "failed", "approvals": 0, "changed_files": 18, "labels": ["critical", "release-blocker"], "assignee": "team-identity", "opened_at": "2026-10-20", "linked_issue_ids": ["ENG-101"]},
+    {"id": "PR-202", "title": "API migration guide", "state": "open", "draft": true, "ci_status": "pending", "approvals": 0, "changed_files": 2, "labels": ["documentation"], "assignee": "team-platform", "opened_at": "2026-10-22", "linked_issue_ids": ["ENG-102"]},
+    {"id": "PR-203", "title": "Stabilize integration tests", "state": "open", "draft": false, "ci_status": "success", "approvals": 2, "changed_files": 34, "labels": [], "assignee": "team-quality", "opened_at": "2026-10-12", "linked_issue_ids": ["ENG-103"]},
+    {"id": "PR-199", "title": "Initial API scaffolding", "state": "merged", "draft": false, "ci_status": "success", "approvals": 2, "changed_files": 12, "labels": [], "assignee": "team-platform", "opened_at": "2026-10-02", "linked_issue_ids": []}
+  ]
+}
